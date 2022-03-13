@@ -12,4 +12,26 @@ stages:
   - job: First job
     steps:
     - bash: echo Build First job
+      displayName: 'Run a one-line script'
+  
+- stage: Dev deploy
+  jobs:
+  - job: Dev deploy job
+    steps:
+    - bash: echo Dev deploy job
+      displayName: 'Run a one-line script'
+
+- stage: QA Deploy
+  jobs:
+  - job: QA Deploy job
+    steps:
+    - bash: echo QA deploy job
+      displayName: 'Run a one-line script'
+
+- stage: Prod deploy
+  jobs:
+  - job: Prod deploy job
+    steps:
+    - bash: echo Prod deploy job
+      displayName: 'Run a one-line script'
       
