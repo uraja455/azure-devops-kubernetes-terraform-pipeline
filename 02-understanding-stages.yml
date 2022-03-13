@@ -9,29 +9,29 @@ pool:
 stages:
 - stage: Build
   jobs:
-  - job: First job
+  - job: Firstjob
     steps:
     - bash: echo Build First job
-      displayName: 'Run a one-line script'
+      
   
-- stage: Dev deploy
+- stage: Devdeploy
   jobs:
-  - job: Dev deploy job
+  - job: Devdeployjob
     steps:
     - bash: echo Dev deploy job
-      displayName: 'Run a one-line script'
+      
 
-- stage: QA deploy
+- stage: QAdeploy
   jobs:
-  - job: QA deploy job
+  - job: QAdeployjob
     steps:
     - bash: echo QA deploy job
-      displayName: 'Run a one-line script'
+      
 
-- stage: Prod deploy
+- stage: Proddeploy
   jobs:
-  - job: Prod deploy job
+  - job: Proddeployjob
     steps:
     - bash: echo Prod deploy job
-      displayName: 'Run a one-line script'
+      
       
