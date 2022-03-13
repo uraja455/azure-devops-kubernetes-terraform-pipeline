@@ -9,7 +9,7 @@ pool:
 stages:
 - stage: Build
   jobs:
-  - job: Job1
+  - job: First job
     steps:
-    - script: echo job1 - Hello, world, change!
-      displayName: 'Run a one-line script'
+    - bash: echo Build First job
+      
