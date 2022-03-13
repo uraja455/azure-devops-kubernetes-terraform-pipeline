@@ -21,9 +21,9 @@ stages:
     - bash: echo Dev deploy job
       displayName: 'Run a one-line script'
 
-- stage: QA Deploy
+- stage: QA deploy
   jobs:
-  - job: QA Deploy job
+  - job: QA deploy job
     steps:
     - bash: echo QA deploy job
       displayName: 'Run a one-line script'
