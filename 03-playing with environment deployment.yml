@@ -21,7 +21,8 @@ stages:
        deploy:
          steps:
            - script: echo Deploying to dev
-
+- stage: QADeploy
+  jobs:
   - deployment: QAdeployJob
     environment: QA
     strategy:
